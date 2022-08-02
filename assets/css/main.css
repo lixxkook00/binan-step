@@ -1,0 +1,112 @@
+
+html{
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* MAIN */
+.bg-intro{
+    height: 1400px;
+    background-image: url(../images/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}   
+
+.header-title{
+    height: 50px;
+    margin: 20px 0;
+}
+
+.header-title img{
+    height: 100%;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    animation: header-title 1s ease-in-out;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+
+    padding: 30px 20px;
+
+    border-top: 2px solid #AD17BB;
+    border-bottom: 2px solid #AD17BB;
+}
+
+.header-item{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-item:hover{
+    cursor: pointer;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.header-item.active{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* INTRO */
+
+.intro{
+    margin: 30px 0;
+}
+
+.intro-img img{
+    animation: header-title .5s ease-in-out;
+}
+
+.intro-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #478FFE;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.title-paragraph{
+    color: #ddd;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* animation */
+@keyframes header-title {
+  0% { 
+    opacity: 0;
+    transform: translateX(-100vw)
+  }
+  
+  100% { 
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 4px #CD85C3, 0 0 5px #CD85C3, 0 0 6px #CD85C3, 0 0 6px #CD85C3, 0 0 8px #CD85C3;
+  }
+  
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 3px #5E80FC, 0 0 4px #5E80FC, 0 0 5px #5E80FC, 0 0 6px #5E80FC, 0 0 7px #5E80FC, 0 0 8px #5E80FC;
+  }
+}

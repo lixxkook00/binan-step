@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <title>Binan Step</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta -->
+    <meta name="title" content="Binan Step">
+    <meta name="author" content="Binan Step">
+    <meta name="description" content="Binan Step">
+
+    <meta property="og:image" content="./assets/images/logo.png">
+    <meta property="og:title" content="Binan Step">
+    <meta property="og:description" content="Binan Step">
+
+</head>
+
+<body>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <!-- <li class="soft-menu__item dark-modes">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+
+                </a>
+            </li> -->
+            <li class="soft-menu__item soft-menu__item--active">
+                <a href="#home" data-address="intro" class="primary-gradient-text header-mobile-logo">
+                    <i class="fa-solid fa-house"></i>HOME
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="primary-gradient-text" href="#about" data-address="about">
+                    <i class="fa-solid fa-user-group"></i>ABOUT US
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="primary-gradient-text" href="#roadmap" data-address="machine">
+                    <i class="fa-solid fa-layer-group"></i>ROAD MAP
+                </a>
+
+                <!-- sub -->
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="primary-gradient-text" href="#collection" data-address="service">
+                    <i class="fa-brands fa-connectdevelop"></i>COLLECTION
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="primary-gradient-text" href="#shop" data-address="vision">
+                    <i class="fa-solid fa-cart-shopping"></i>SHOP
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="primary-gradient-text" href="#contact" data-address="vision">
+                    <i class="fa-solid fa-language"></i>CONTACT
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-intro">
+        <div class="container">
+            <div class="row">
+
+                <!-- HEADER TITLE -->
+                <div class="col-12">
+                    <div class="header-title centering">
+                        <img src="./assets/images/logo-title.png" alt="">
+                    </div>
+                </div>
+
+                <!-- HEADER -->
+                <header class="header">
+                    <a href="#home" class="header-item active">
+                        home
+                    </a>
+
+                    <a href="#about" class="header-item">
+                        about us
+                    </a>
+
+                    <a href="#road" class="header-item">
+                        road map
+                    </a>
+
+                    <a href="#collection" class="header-item">
+                        collection
+                    </a>
+
+                    <a href="#shop" class="header-item">
+                        shop
+                    </a>
+
+                    <a href="#contact" class="header-item">
+                        contact
+                    </a>
+                </header>
+            </div>
+
+            <!-- INTRO -->
+            <div class="intro">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="intro-img">
+                            <img src="./assets/images/intro-img.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="intro-content">
+                            <div class="title-white">
+                                Ứng dụng
+                            </div>
+
+                            <div class="intro-title">
+                                SỨC KHỎE & KIẾM TIỀN
+                            </div>
+
+                            <div class="title-paragraph">
+                                "Là trò chơi Move to Earn được xây dựng trên nền tảng Binance Smart Chain. Ứng dụng di
+                                động tuyệt vời giúp bạn xây dựng
+                                Văn hóa đi bộ, theo đuổi lối sống lành mạnh, cải thiện sức khỏe, biến những hoạt động
+                                của bản thân thành thu nhập thụ
+                                động hấp dẫn"
+                            </div>
+
+                            <div class="centering">
+                                <div class="primary-button">
+                                    BẮT ĐẦU NGAY HÔM NAY
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./assets/js/main.js"></script>
