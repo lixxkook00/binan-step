@@ -446,3 +446,77 @@ body{
   text-align: center;
   font-weight: 600;
 }
+
+.modal.show .modal-dialog{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto !important;
+}
+
+.fade{
+  transition: opacity 0.3s linear;
+}
+
+.modal-content{
+  width: auto;
+  border-radius: 30px;
+}
+
+.modal-content .marketplace-cart{
+  width: 270px;
+  /* height: 300px; */
+}
+
+.shoe-modal{
+  background-image: url(../images/shoe-modal-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 10px 20px 40px;
+  position: relative;
+}
+
+.close-custom{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-custom:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.close-custom img{
+  width: 30px;
+}
+
+.reward{
+  padding: 20px;
+  position: relative;
+}
+
+.reward-item img{
+  width: 300px;
+}
+
+.reward-item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.modal-content .marketplace-cart-rarity{
+  font-size: 30px;
+}
+
+.reward.bonus{
+  padding-bottom: 140px;
+}
+
+.reward-bonus{
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 100%;
+}
