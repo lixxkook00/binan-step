@@ -520,3 +520,21 @@ body{
   left: -10%;
   width: 100%;
 }
+
+.app{
+  display: flex;
+  margin: 20px 0;
+}
+
+.app-item:first-child{
+  margin-right: 10px;
+}
+
+.app-item{
+  transition: all 0.3s ease-in-out;
+}
+
+.app-item:hover{
+  cursor: pointer;
+  transform: scale(0.98);
+}
