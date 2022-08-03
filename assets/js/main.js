@@ -9,3 +9,18 @@ const toggleNavMobile = () => {
 $('.soft-menu__list').onclick = (e) => {
     e.stopPropagation()
 }
+
+// document.ready(function(e){
+//   $("body").find("#nfc").hover(function() {
+//       $("#basicModal").modal('show');
+//   }, function(){
+//       $("#basicModal").modal('hide');                            
+//   });
+// });
+
+$$('.marketplace-cart').forEach(element => {
+    element.addEventListener('mouseover', (event) => {
+        console.log($("#exampleModal"))
+    });
+
+});
