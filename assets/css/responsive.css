@@ -132,6 +132,10 @@
         justify-content: center;
         text-align: center;
     }
+
+    .value-item-icon--2{
+        bottom: -140%;
+    }
 }
 
 /* 500*/

@@ -10,17 +10,28 @@ $('.soft-menu__list').onclick = (e) => {
     e.stopPropagation()
 }
 
-// document.ready(function(e){
-//   $("body").find("#nfc").hover(function() {
-//       $("#basicModal").modal('show');
-//   }, function(){
-//       $("#basicModal").modal('hide');                            
-//   });
-// });
+$('.intro').onmousemove  = (e) => {
+    $('.intro-img img').style.transform = `translate(${e.x/80}px,${e.y/60}px)`
+}
 
-$$('.marketplace-cart').forEach(element => {
-    element.addEventListener('mouseover', (event) => {
-        console.log($("#exampleModal"))
-    });
+window.onscroll = function (e) {  
+    let distanceFromTop = $('.value').getBoundingClientRect().top;
+    let heightElement = $('.value').clientHeight;
 
-});
+    let thisArea = distanceFromTop+heightElement
+
+    if(distanceFromTop<(window.screen.height/2) && thisArea >0){
+        const thisShitPercent = 100-(distanceFromTop/(window.screen.height/2))*100;
+
+        if(window.screen.width<739){
+            $('.value-item-icon--1').style.transform = `rotate(16deg) translate(-190%,${80+thisShitPercent*0.25}%)`
+            $('.value-item-icon--2').style.transform = `translateY(${thisShitPercent*0.4}%)`
+            $('.value-item-icon--3').style.transform = `rotate(-16deg) translate(190%,${80+thisShitPercent*0.25}%)`
+        }
+        else{
+            $('.value-item-icon--1').style.transform = `rotate(60deg) translate(-190%,${190+thisShitPercent*0.8}%)`
+            $('.value-item-icon--2').style.transform = `translateY(${thisShitPercent*0.6}%)`
+            $('.value-item-icon--3').style.transform = `rotate(-60deg) translate(190%,${190+thisShitPercent*0.8}%)`
+        }
+    }
+} 
