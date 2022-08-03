@@ -11,6 +11,16 @@
   }
 }
 
+@keyframes roadmap-child {
+  0% { 
+    filter: drop-shadow(0 0 2px #000);
+  }
+  
+  100% { 
+    filter: drop-shadow(0 0 20px #A3FFFF);
+  }
+}
+
 @keyframes glow {
   from {
     text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 4px #CD85C3, 0 0 5px #CD85C3, 0 0 6px #CD85C3, 0 0 6px #CD85C3, 0 0 8px #CD85C3;
@@ -175,6 +185,7 @@ body{
     color: #478FFE;
     font-size: 40px;
     letter-spacing: 3px;
+    font-family: sans-serif;
 }
 
 .title-paragraph{
@@ -537,4 +548,60 @@ body{
 .app-item:hover{
   cursor: pointer;
   transform: scale(0.98);
+}
+
+.value-title{
+  margin: 20px 0;
+}
+
+.value-title img{
+  width: 250px;
+}
+
+.value-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.value-item{
+  width: 33.333%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.value-item-icon{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.value-item-icon img{
+  animation: roadmap-child 0.5s infinite alternate-reverse;
+}
+
+.value-item-icon img:first-child{
+  width: 22px;
+}
+
+.value-item-icon img:nth-child(2){
+  width: 26px;
+}
+
+.value-item-icon img:last-child{
+  width: 28px;
+  animation-delay: 0.25s;
+}
+
+.value-item--1 .value-item-icon{
+  transform: rotate(60deg)
+}
+
+.value-item--3 .value-item-icon{
+  transform: rotate(-60deg)
 }
