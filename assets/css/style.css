@@ -57,9 +57,24 @@ a:hover{
     letter-spacing: 1px;
 }
 
+.desc-white{
+    color: #fff;
+    font-size: 26px;
+}
+
+.title-primary-blue{
+    font-weight: 500;
+    color: #478FFE;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+
 .primary-button{
     display: inline-flex;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 18px;
     color: #fff;
     padding: 10px 20px;
     border-radius: 16px;
@@ -73,6 +88,17 @@ a:hover{
     transform: scale(0.98);
 }
 
+.paragraph{
+    color: #fff;
+    text-align: justify;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.paragraph.center{
+    text-align-last: center;
+}
 
 /* NAV MOBILE */
 .soft-menu {

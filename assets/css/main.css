@@ -1,3 +1,88 @@
+/* animation */
+@keyframes header-title {
+  0% { 
+    opacity: 0;
+    transform: translateX(-100vw)
+  }
+  
+  100% { 
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 4px #CD85C3, 0 0 5px #CD85C3, 0 0 6px #CD85C3, 0 0 6px #CD85C3, 0 0 8px #CD85C3;
+  }
+  
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 3px #5E80FC, 0 0 4px #5E80FC, 0 0 5px #5E80FC, 0 0 6px #5E80FC, 0 0 7px #5E80FC, 0 0 8px #5E80FC;
+  }
+}
+
+@keyframes glowing-born {
+  from {
+    filter: drop-shadow(-2px 1px 3px #FB466A);
+    transform: scale(1.25) translateY(0px);
+  }
+  
+  to {
+    filter: drop-shadow(-2px 1px 7px #1BD3F2);
+    transform: scale(1.25) translateY(5px);
+  }
+}
+
+@keyframes ball-breathing{
+    0% {
+        box-shadow:
+            0 0 2px 2px rgba(255, 255, 255, 0.581),
+            0 0 4px 2px #43D5D4,
+            0 0 8px 6px #26FFF5;
+    }
+
+    100%{
+        box-shadow:
+            0 0 8px 8px rgba(255, 255, 255, 0.581),
+            0 0 12px 15px #43D5D4,
+            0 0 20px 25px #26FFF5;
+    }
+}
+
+@keyframes why-img {
+  0% { 
+    box-shadow: 
+    rgba(240, 46, 169, 0.227) -5px -5px;
+    transform: translate(5px,0)
+  }
+  
+  100% { 
+    box-shadow: 
+    rgba(240, 46, 170, 0.4) -5px -5px, 
+    rgba(240, 46, 170, 0.3) -10px -10px, 
+    rgba(240, 46, 170, 0.2) -15px -15px,
+    rgba(240, 46, 170, 0.1) -20px -20px;
+    /* rgba(240, 46, 170, 0.05) -25px 25px; */
+    transform: translate(0,5px)
+  }
+}
+
+@keyframes rotate-360 {
+  0% { 
+    transform: rotate(0);
+  }
+  
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
 
 html{
     background-color: rgb(0, 0, 0);
@@ -15,12 +100,13 @@ html {
 }
 
 /* MAIN */
-.bg-intro{
-    height: 1400px;
-    background-image: url(../images/bg-1.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
+body{
+  /* height: 1400px; */
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  z-index: -1;
 }   
 
 .header-title{
@@ -65,7 +151,8 @@ html {
 /* INTRO */
 
 .intro{
-    margin: 30px 0;
+  margin: 30px 0;
+  color: #fff;
 }
 
 .intro-img img{
@@ -88,25 +175,193 @@ html {
     margin: 20px 0;
 }
 
-/* animation */
-@keyframes header-title {
-  0% { 
-    opacity: 0;
-    transform: translateX(-100vw)
-  }
-  
-  100% { 
-    opacity: 1;
-    transform: translateX(0)
-  }
+.intro-desc{
+  font-size: 20px;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 4px #CD85C3, 0 0 5px #CD85C3, 0 0 6px #CD85C3, 0 0 6px #CD85C3, 0 0 8px #CD85C3;
-  }
-  
-  to {
-    text-shadow: 0 0 1px #fff, 0 0 3px #5E80FC, 0 0 4px #5E80FC, 0 0 5px #5E80FC, 0 0 6px #5E80FC, 0 0 7px #5E80FC, 0 0 8px #5E80FC;
-  }
+.intro-desc .title-primary-blue{
+  font-size: 28px;
+}
+
+.born-images{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+
+
+.born-images-item{
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.born-images-item img{
+  width: 100%;
+  height: auto;
+  transform: scale(1.25);
+  transition: all 0.3s ease-in-out;
+  animation : glowing-born 2s ease-in-out infinite alternate;
+}
+
+.born-images-item:hover{
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
+.born-images-item:nth-child(2) img,
+.born-images-item:nth-child(4) img{
+  animation-delay: 0.8s;
+}
+
+.born-images-item:nth-child(3) img{
+  animation-delay: 1.2s;
+}
+
+/* lamp motherfucker */
+.lamp{
+  animation: ball-breathing 2s infinite alternate;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.581);
+  border-radius: 50%;
+  width: 1px;
+}
+
+.born-images-item:nth-child(3) .lamp{
+  top: 26%;
+  left: 70%;
+}
+
+/* WHY */
+.why{
+  margin: 100px 0;
+}
+
+.why-images {
+  position: relative;
+}
+
+
+.why-images img{
+  transition: all 0.3s ease-in-out;
+  box-shadow: 
+    rgba(240, 46, 169, 0.227) -5px -5px;
+    transform: translate(5px,0);
+  animation: why-img 5s infinite alternate;
+}
+
+.why-images img:hover{
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
+.why-images img:nth-child(1){
+  animation-delay: 1.5s;
+}
+
+
+.why-images img:nth-child(2){
+  animation-delay: 3s;
+}
+
+.why-images-left{
+  display: flex;
+  flex-direction:column;
+  align-items: end;
+  margin-right: 20px;
+}
+
+.why-images-left img:nth-child(1){
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.why-images-left img:nth-child(2){
+  width: 140px;
+}
+
+.value{
+  background-color: rgba(0, 0, 0, 0.492);
+  padding: 20px 50px;
+}
+
+.marketplace{
+  margin: 100px 0;
+}
+
+.marketplace-title-img img{
+  width: 80%;
+}
+
+.marketplace-title{
+  font-size: 45px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-shadow: -4px -2px rgba(0, 0, 0, 0.588);
+}
+
+.marketplace-wrapper{
+  display: flex;
+}
+
+.marketplace-cart{
+  width: 25%;
+}
+
+.marketplace-cart-content{
+  position: relative;
+}
+
+.marketplace-cart-content-border{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #6B43F7 0%, #E614C3 100%);
+  box-shadow: #e614c394 0px 2px 30px 0px;
+  border-radius:50%;
+  position: relative;
+  animation: rotate-360 4s infinite alternate;
+}
+
+.marketplace-cart-content-border::after{
+  content: '';
+  position: absolute;
+  height: 94%;
+  width: 94%;
+  top: 50%;
+  left: 50%;
+  background-color: #2b0049;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.marketplace-cart-content-standing{
+  position: absolute;
+  left: 50%;
+  bottom: -22%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.marketplace-cart-content-shoe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(30deg) scale(1.2);
+  /* z-index: 1; */
+}
+
+.marketplace-cart-content-effect{
+  position: absolute;
+  height: 60%;
+  width: 90%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-image: url('../images/effect.png');
+  background-blend-mode: multiply;
+  background-size: contain;
 }

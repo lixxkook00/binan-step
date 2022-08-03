@@ -26,6 +26,10 @@
     .hidden-m-t {
         display: none !important;
     }
+
+    body{
+    background-size: auto 100%;
+    }   
 }
 
 /* Mobile Only */
