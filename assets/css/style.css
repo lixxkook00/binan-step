@@ -42,13 +42,13 @@ a:hover{
 /* custom inline */
 
 .primary-gradient-text{
-  user-select: none;
-  font-weight: 900 !important;
-  background-image: linear-gradient(90deg, #6B42F7 10%, #CA6AFF 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  font-family: sans-serif;
+    user-select: none;
+    font-weight: 900 !important;
+    background-image: linear-gradient(180deg, #78C9FF 13%, #E6A5FF 73%, #8B89F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .title-white{

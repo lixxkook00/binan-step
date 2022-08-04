@@ -132,9 +132,12 @@
         justify-content: center;
         text-align: center;
     }
+    .value-item-icon{
+        bottom: -100%;
+    }
 
     .value-item-icon--2{
-        bottom: -140%;
+        bottom: -180%;
     }
 }
 
