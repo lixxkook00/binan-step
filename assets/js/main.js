@@ -11,7 +11,7 @@ $('.soft-menu__list').onclick = (e) => {
 }
 
 $('.intro').onmousemove  = (e) => {
-    $('.intro-img img').style.transform = `translate(${e.x/80}px,${e.y/60}px)`
+    $('.intro-img-body').style.transform = `translate(${e.x/80}px,${e.y/60}px)`
 }
 
 window.onscroll = function (e) {  
@@ -37,54 +37,62 @@ window.onscroll = function (e) {
 } 
 
 
+$('.scroll-to-top').onclick = () => {
+    window.scrollTo({
+        top: 100,
+        left: 100,
+        behavior: 'smooth'
+    });
+}
+
 // HANDLE SHOW MODAL MODAL
 
 let currentVideoID = 0;
 
 const videoContent = [
     {
-        title: "Bước 1.TẢI APP BINANSTEP TRÊN ANDROID",
+        title: "Bước 1: TẢI APP BINANSTEP TRÊN ANDROID",
         urlVideo:"https://www.youtube.com/embed/r9WhqcKtcHM"
     },
     {
-        title: "Bước 2. TẢI APP BINANSTEP TRÊN IOS",
+        title: "Bước 2:  TẢI APP BINANSTEP TRÊN IOS",
         urlVideo:"https://www.youtube.com/embed/qcgbmdDJY4Y"
     },
     {
-        title: "Bước 3. ĐĂNG KÝ TÀI KHOẢN & TẠO MÃ CODE",
+        title: "Bước 3:  ĐĂNG KÝ TÀI KHOẢN & TẠO MÃ CODE",
         urlVideo:"https://www.youtube.com/embed/ksz_Xde1aDQ"
     },
     {
-        title: "Bước 4. TẢI + SỬ DỤNG VÍ METAMASK",
+        title: "Bước 4:  TẢI + SỬ DỤNG VÍ METAMASK",
         urlVideo:"https://www.youtube.com/embed/uRb49tzYJn8"
     },
     {
-        title: "Bước 5.TẢI + SỬ DỤNG VÍ TRUST",
+        title: "Bước 5: TẢI + SỬ DỤNG VÍ TRUST",
         urlVideo:"https://www.youtube.com/embed/ctpjkImWde0"
     },
     {
-        title: "Bước 6.SỬ DỤNG DAPP + MUA BÁN TOKEN",
+        title: "Bước 6: SỬ DỤNG DAPP + MUA BÁN TOKEN",
         urlVideo:"https://www.youtube.com/embed/BcKA7-luniY"
     },
     {
-        title: "Bước 7.ĐĂNG NHẬP + THAY ĐỔI MẬT KHẨU",
+        title: "Bước 7: ĐĂNG NHẬP + THAY ĐỔI MẬT KHẨU",
         urlVideo:"https://www.youtube.com/embed/2oq9nCZ6Bzc"
     },
     {
-        title: "Bước 8.THAY ĐỔI USERNAME  +ĐỒNG BỘ VÍ",
+        title: "Bước 8: THAY ĐỔI USERNAME  +ĐỒNG BỘ VÍ",
         urlVideo:"https://www.youtube.com/embed/sdiWMtJN_2o"
     },
     {
-        title: "Bước 9.MUA GIÀY TRÊN APP BINANSTEP",
+        title: "Bước 9: MUA GIÀY TRÊN APP BINANSTEP",
         urlVideo:"https://www.youtube.com/embed/8d5wjR8uMqg"
     }
     ,{
-        title: "Bước 10.LẤY GIÀY + CÁCH SỬ DỤNG",
+        title: "Bước 10: LẤY GIÀY + CÁCH SỬ DỤNG",
         urlVideo:"https://www.youtube.com/embed/PKZK74oRHn4"
     }
     ,
     {
-        title: "Bước 11.RÚT TOKEN PAY VỀ VÍ",
+        title: "Bước 11: RÚT TOKEN PAY VỀ VÍ",
         urlVideo:"https://www.youtube.com/embed/cKNyaROOiU0"
     }
     ,

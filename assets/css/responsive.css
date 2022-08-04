@@ -123,6 +123,10 @@
     #exampleModalVideo .modal-control{
         display: none;
     }
+
+    .intro-gold{
+        font-size: 17px !important;
+    }
  
 }
 
@@ -130,6 +134,16 @@
 @media (max-width: 739px) {
     .hidden-m {
         display: none !important;
+    }
+
+    .paragraph {
+        line-height: 26px;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    .binan-title img{
+        width: 90%;
     }
 
     .wrapper-text{
@@ -224,7 +238,7 @@
         text-align: center;
     }
 
-    .intro-img img{
+    .intro-img-body{
         width: 300px;
     }
 
