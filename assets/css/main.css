@@ -235,6 +235,10 @@ body{
     font-family: sans-serif;
 }
 
+.intro .title-white{
+  font-size: 20px;
+}
+
 .title-paragraph{
     color: #ddd;
     font-style: italic;
@@ -247,7 +251,7 @@ body{
   font-size: 20px;
 }
 
-.intro-desc .title-primary-blue{
+.intro .title-primary-blue{
   font-size: 28px;
 }
 
@@ -257,7 +261,14 @@ body{
   margin: 60px 0;
 }
 
+.wrapper-text{
+  display: flex;
+  align-items: center;
+}
 
+.wrapper-text .title-primary-blue{
+  margin: 0 4px;
+}
 
 .born-images-item{
     transition: all 0.3s ease-in-out;
@@ -1111,6 +1122,7 @@ body{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 #exampleModalVideo .modal-content,

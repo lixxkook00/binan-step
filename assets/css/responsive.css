@@ -132,6 +132,32 @@
         display: none !important;
     }
 
+    .wrapper-text{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .value-item-icon img:first-child {
+        width: 40%;
+    }
+
+    .value-item-icon img:nth-child(2) {
+        width: 50%;
+    }
+
+    .value-item-icon img:last-child {
+        width: 80%;
+        animation-delay: 0.25s;
+    }
+
+    .roadmap-item-text{
+        border-radius: 8px
+    }
+
+    .intro .title-primary-blue {
+        font-size: 34px;
+    }
+
     .marketplace-title{
         font-size: 22px;
     }
@@ -313,6 +339,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .name-this-shit-tower img{
+        width: 10%;
+    }
+
+    .name-this-shit-tower{
+        top: 22%;
+        right: 38.98%;
     }
 }
 
