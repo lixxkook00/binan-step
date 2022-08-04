@@ -99,6 +99,10 @@
         animation-delay: 0.9s;
     }
 
+    .name-this-shit-tower img{
+        width: 40% !important;
+    }
+
 }
 
 /* Mobile & Tablet */
