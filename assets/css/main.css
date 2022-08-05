@@ -1141,8 +1141,15 @@ body{
     flex-direction: column;
 }
 
+#exampleModalDoc .modal-dialog,
 #exampleModalVideo .modal-dialog{
     max-width: 800px !important;
+}
+
+
+#exampleModalDoc .modal-content{
+  width: 98%;
+  background-color: transparent;
 }
 
 #exampleModalVideo .modal-content{
