@@ -131,6 +131,10 @@
     .intro-gold{
         font-size: 17px !important;
     }
+
+    .intro-content{
+        margin-top: 40px;
+    }
  
 }
 
@@ -230,7 +234,7 @@
     }
 
     .intro-title{
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .intro .title-white{
