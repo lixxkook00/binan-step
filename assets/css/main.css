@@ -36,6 +36,16 @@
   }
 }
 
+@keyframes buy {
+  0% { 
+    transform: scale(0.97)
+  }
+  
+  100% { 
+    transform: scale(1)
+  }
+}
+
 @keyframes glow {
   from {
     text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 4px #CD85C3, 0 0 5px #CD85C3, 0 0 6px #CD85C3, 0 0 6px #CD85C3, 0 0 8px #CD85C3;
@@ -585,7 +595,7 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  padding: 10px 20px 40px;
+  padding: 10px 20px 50px;
   position: relative;
 }
 
@@ -605,8 +615,29 @@ body{
 }
 
 .reward{
-  padding: 20px;
+  padding: 40px 20px 20px;
   position: relative;
+}
+
+.reward-item-buy{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reward-item-buy img{
+  width: 60% !important;
+  transition: all 0.5s ease-in-out;
+  animation: buy 2s linear infinite alternate;
+}
+
+.reward-item-buy:hover img{
+  filter: drop-shadow(10px 5px 15px #F7B424);
 }
 
 .reward-item img{

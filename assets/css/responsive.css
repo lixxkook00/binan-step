@@ -206,7 +206,7 @@
         margin-top: 10px;
     }
 
-    .option .col-md-3.col-6:nth-child(2n+2) .option-item::after{
+    .option .col-md-3.col-6:nth-child(2n+2)::after{
         opacity: 0;
     }
 
