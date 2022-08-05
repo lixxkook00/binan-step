@@ -48,7 +48,7 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title-white{
