@@ -1622,7 +1622,7 @@ iframe{
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in-out;
-    z-index: 1000000000;
+    z-index: 1000;
 }
 
 .scroll-to-top i{
@@ -1649,4 +1649,27 @@ iframe{
 
 .normal-shoe{
   transform: scale(0.85) rotate(-3deg) !important;
+}
+
+
+
+/* LOADING */
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  background-image: linear-gradient(135deg, #41007A 0%, #6667FF 48%, #41007A 100%);
+}
+
+.loading img:first-child{
+  width: 300px;
+}
+
+.loading img:last-child{
+  max-width: 300px;
 }
