@@ -31,10 +31,6 @@
         margin-top: 20px;
     }
 
-    .marketplace-cart.active{
-        transform: scale(1);
-    }
-
     .marketplace .marketplace-cart-content-border{
         height: 260px;
         width: 260px;
@@ -135,6 +131,24 @@
     .intro-content{
         margin-top: 40px;
     }
+
+    .marketplace-cart,
+    .marketplace-cart.cart-center,
+    .marketplace-cart.active{
+        transform: scale(1);
+    }
+
+    .marketplace-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .marketplace-cart:nth-child(1) { order: 5; }
+    .marketplace-cart:nth-child(2) { order: 2; }
+    .marketplace-cart:nth-child(3) { order: 1; }
+    .marketplace-cart:nth-child(4) { order: 3; }
+    .marketplace-cart:nth-child(5) { order: 4; }
+    
  
 }
 
@@ -182,10 +196,6 @@
 
     .marketplace-title{
         font-size: 22px;
-    }
-
-    .marketplace-wrapper{
-        flex-wrap: wrap;
     }
 
     .marketplace-cart{

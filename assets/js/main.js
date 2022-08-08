@@ -14,6 +14,7 @@ $('.intro').onmousemove  = (e) => {
     $('.intro-img-body').style.transform = `translate(${e.x/80}px,${e.y/60}px)`
 }
 
+// handle scroll to move this shit arrow 
 window.onscroll = function (e) {  
     let distanceFromTop = $('.value').getBoundingClientRect().top;
     let heightElement = $('.value').clientHeight;
@@ -45,8 +46,7 @@ $('.scroll-to-top').onclick = () => {
     });
 }
 
-// HANDLE SHOW MODAL MODAL
-
+// HANDLE SHOW MODAL VIDEOS
 let currentVideoID = 0;
 
 const videoContent = [
