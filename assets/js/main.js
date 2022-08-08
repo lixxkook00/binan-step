@@ -78,21 +78,21 @@ const videoContent = [
         title: "Bước 7: ĐĂNG NHẬP + THAY ĐỔI MẬT KHẨU",
         urlVideo:"https://www.youtube.com/embed/2oq9nCZ6Bzc"
     },
+    // {
+    //     title: "Bước 8: THAY ĐỔI USERNAME  +ĐỒNG BỘ VÍ",
+    //     urlVideo:"https://www.youtube.com/embed/sdiWMtJN_2o"
+    // },
     {
-        title: "Bước 8: THAY ĐỔI USERNAME  +ĐỒNG BỘ VÍ",
-        urlVideo:"https://www.youtube.com/embed/sdiWMtJN_2o"
-    },
-    {
-        title: "Bước 9: MUA GIÀY TRÊN APP BINANSTEP",
+        title: "Bước 8: MUA GIÀY TRÊN APP BINANSTEP",
         urlVideo:"https://www.youtube.com/embed/8d5wjR8uMqg"
     }
     ,{
-        title: "Bước 10: LẤY GIÀY + CÁCH SỬ DỤNG",
+        title: "Bước 9: LẤY GIÀY + CÁCH SỬ DỤNG",
         urlVideo:"https://www.youtube.com/embed/PKZK74oRHn4"
     }
     ,
     {
-        title: "Bước 11: RÚT TOKEN PAY VỀ VÍ",
+        title: "Bước 10: RÚT TOKEN PAY VỀ VÍ",
         urlVideo:"https://www.youtube.com/embed/cKNyaROOiU0"
     }
     ,
