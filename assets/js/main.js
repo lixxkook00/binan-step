@@ -189,3 +189,15 @@ $$('.video-icon').forEach((item) => {
 window.addEventListener('load', (event) => {
   $('.loading').style.display = "none"
 });
+
+// handle copy smart contract
+$("#copyContract").onclick = () => {
+    navigator?.clipboard?.writeText("0xed8EE028727B27bA4326d0f31C08ECb690D98a6E")
+    window?.clipboardData?.setData("ref1", "0xed8EE028727B27bA4326d0f31C08ECb690D98a6E")
+
+    $("#copyContract").classList = "fa-solid fa-circle-check icon-active"
+
+    setTimeout(() => {
+        $("#copyContract").classList = "fa-solid fa-copy"
+    },2000)
+}

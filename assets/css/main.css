@@ -1048,7 +1048,7 @@ body{
 
 .social{
   position: absolute;
-  bottom: 5%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -1672,4 +1672,105 @@ iframe{
 
 .loading img:last-child{
   max-width: 300px;
+}
+
+#token-contract{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.447);
+    color: #FFFFFF;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 -1px 10px #A3FEFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#token-contract div{
+    display: flex;
+    align-items: center;
+}
+
+#token-contract p{
+    margin-bottom: 0;
+    margin-left: 8px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+#token-contract i{
+    color: #fff;
+    margin-left: 8px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#token-contract i:hover{
+    cursor: pointer;
+    color: #d10a0d;
+    transform: scale(1.2);
+}
+
+.intro .primary-button{
+  text-transform: uppercase;
+}
+
+.register-form{
+  display: flex;
+  flex-direction:column;
+  padding-top: 20px;
+}
+
+.register-title{
+  font-weight: 700;
+  color: #FFED5A;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.register-form input{
+  background-color: transparent;
+  border: 2px solid #E3B87D;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  min-width: 300px;
+  color: #FFED5A;
+}
+
+.register-form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFED5A;
+  opacity: 1; /* Firefox */
+}
+
+.register-form .register-btn{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.register-form .register-btn:hover{
+  cursor: pointer;
+}
+
+.register-form .register-btn img{
+  height: 60px;
+  width: auto;
+}
+
+.icon-active{
+  color: #0aef0e !important;
+  font-size: 20px;
+  transition: all 0.2s ease;
 }

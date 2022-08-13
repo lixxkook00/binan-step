@@ -143,11 +143,11 @@
         justify-content: space-around;
     }
 
-    .marketplace-cart:nth-child(1) { order: 5; }
+    /* .marketplace-cart:nth-child(1) { order: 5; }
     .marketplace-cart:nth-child(2) { order: 2; }
     .marketplace-cart:nth-child(3) { order: 1; }
     .marketplace-cart:nth-child(4) { order: 3; }
-    .marketplace-cart:nth-child(5) { order: 4; }
+    .marketplace-cart:nth-child(5) { order: 4; } */
     
  
 }
@@ -156,6 +156,19 @@
 @media (max-width: 739px) {
     .hidden-m {
         display: none !important;
+    }
+
+    .intro .primary-button{
+        font-size: 14px;
+    }
+
+    #token-contract{
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    #token-contract div{
+        display: flex;
     }
 
     .paragraph {
@@ -380,6 +393,20 @@
     .name-this-shit-tower{
         top: 22%;
         right: 38.98%;
+    }
+
+    .social{
+        width: 90%;
+        padding: 10px 20px;
+        justify-content: space-around;
+    }
+
+    .social-item img{
+        width: 35px;
+    }
+
+    .social-item:not(:last-child) {
+        margin-right: 16px;
     }
 }
 
