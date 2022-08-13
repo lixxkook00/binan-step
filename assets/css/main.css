@@ -361,7 +361,6 @@ body{
   position: relative;
 }
 
-
 .why-images {
   position: relative;
 }
@@ -1709,7 +1708,6 @@ iframe{
     color: #fff;
     margin-left: 8px;
     transition: all 0.5s ease-in-out;
-
 }
 
 #token-contract i:hover{
